@@ -10,3 +10,105 @@
     padding-left: 10px;
 
 }
+
+.icons {
+    width: 70px;
+}
+
+.backet {
+    padding: 3px 4px;
+    border: 2px solid #0ce76b;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+
+}
+
+.backet:hover {
+    background: #0ce76b;
+}
+
+.backet:active {
+    background: #0cd813;
+}
+
+.avatar {
+    padding: 3px 4px;
+    border: 2px solid #0ce76b;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.avatar:hover {
+    background: #0ce76b;
+}
+
+.avatar:active {
+    background: #0cd813;
+
+}
+/*=============================== header end */
+
+/* ======================= books start */
+.list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+.card {
+    position: relative;
+    padding: 25px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50%;
+}
+
+.img {
+margin: 0 auto;
+border-radius: 3px;
+}
+
+.name {
+    margin-top: 10px;
+    font-size: large;
+}
+
+.span{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.spann{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.savat {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #3dce9b;
+    border-radius: 10px;
+    padding: 4px 7px; 
+    display: flex;
+    align-items: center;
+}
+
+.wikipediya{
+    text-decoration: none;
+
+}
+
+
+/* ======================= books end */

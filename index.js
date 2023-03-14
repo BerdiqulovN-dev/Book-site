@@ -1,29 +1,33 @@
 "use strict";
 
+let elList = document.querySelector(".list");
+
 function renderUi(array) {
-	for (let item of array) {
-		let Li = document.createElement("li");
-		let Img = document.createElement("img");
-		let Name = document.createElement("h2");
-		let Book = document.createElement("h2");
-		let Year = document.createElement("p");
-		let Number = document.createElement("p");
-		let Lang = document.createElement("p");
+	array.forEach((item) => {
+		let elLi = document.createElement("li");
+		elLi.setAttribute("class", "card");
+		console.log("elLi");
 
-		Li.setAttribute("class", "card");
-		Img.setAttribute("class", "card-img");
-		Name.setAttribute("class", "card-name");
-		Book.setAttribute("class", "card-book");
-		Year.setAttribute("class", "card-year");
-		Number.setAttribute("class", "card-number");
-		Lang.setAttribute("class", "card-lang");
-
-		Img.src = item.imageLink;
-		Title.textContent = item.name;
-		Text.textContent = item.candy;
-		Mass.textContent = item.weight;
-		Age.textContent = item.avg_spawns + " age";
-	}
+		elLi.innerHTML = `
+		
+		<img src="${item.imageLink}" width="240px" height="260px" alt="book img" class="img">
+	    <h2 class="name">${item.author}</h2>
+	    <div class="span">
+		   <p class="year">${item.year}</p>
+		   <p class="page">${item.pages}</p>
+	    </div>
+	    <div class="spann">
+		   <a href="${item.link}" class="wikipediya">
+		   <p class="link">Wikipediya</p>
+		   </a>
+		   <p class="language">${item.language}</p>
+	    </div>
+		<a href="#" class="savat">
+		   <img src="./images/basket.svg" width="20px" height="20px" alt="basket" class="savatcha">
+		</a>
+	    
+		`;
+		elList.append(elLi);
+	});
 }
-
 renderUi(books);
