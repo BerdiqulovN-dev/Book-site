@@ -39,10 +39,11 @@ for (let i = 1; i < 10; i++) {
 	elNumLi.setAttribute("class", "number");
 	elNumLi.innerHTML = `
 	<a href="#" class="number-link">${i}</a>
-	
 	`;
 	elNums.append(elNumLi);
 }
+
+
 
 let selectArr = [];
 let selectArr2 = [];
@@ -68,7 +69,6 @@ elSelect.addEventListener("change", (evt) => {
 	let value = evt.target.value;
 	elList.innerHTML = "";
 	if (value == "all") {
-		console.log(books);
 		renderUi(books);
 		search(books);
 	} else {
