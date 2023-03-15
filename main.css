@@ -11,6 +11,7 @@
 
 }
 
+
 .icons {
     width: 70px;
 }
@@ -50,6 +51,42 @@
 }
 /*=============================== header end */
 
+
+/* numbers start */
+.select{
+border-radius: 5px;
+/* border: none; */
+}
+
+
+
+
+.number-link{
+    padding: 1px 8px;
+    text-decoration: none;
+    background-color: #245bca;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.number-link:hover{
+    background-color: #2cbde1;
+}
+.number-link:active{
+    background-color: #2ce174;
+}
+
+
+
+
+
+
+
+
+/* numbers end */
+
+
+
 /* ======================= books start */
 .list {
     width: 100%;
@@ -60,6 +97,8 @@
 
 
 .card {
+    margin: 0 auto;
+    width: 290px;
     position: relative;
     padding: 25px;
     display: flex;
@@ -104,6 +143,16 @@ border-radius: 3px;
     display: flex;
     align-items: center;
 }
+.savat:hover{
+    background-color: #5cef42;
+
+}
+
+.savat:active{
+    background-color: #4273ef;
+
+}
+
 
 .wikipediya{
     text-decoration: none;
@@ -112,3 +161,5 @@ border-radius: 3px;
 
 
 /* ======================= books end */
+
+
